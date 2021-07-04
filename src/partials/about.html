@@ -2,7 +2,19 @@
 <section class="about">
     <h2 class="about__title">Teacher</h2>
 
-    <img src="" alt="About us">
+    <picture class="about__picture">
+        <source srcset="./images/about/moreva-desktop.webp 1x, ./images/about/moreva-desktop@2x.webp 2x"
+            media="(min-width: 1366px)" type="image/webp">
+        <source srcset="./images/about/moreva-desktop.jpg 1x, ./images/about/moreva-desktop@2x.jpg 2x"
+            media="(min-width: 1366px)">
+        <source srcset="./images/about/moreva-tablet-mobile.webp 1x, ./images/about/moreva-tablet-mobile@2x.webp 2x"
+            media="(min-width: 768px)" type="image/webp">
+        <source srcset="./images/about/moreva-tablet-mobile.jpg 1x, ./images/about/moreva-tablet-mobile@2x.jpg 2x" media="(min-width: 768px)">
+        <source srcset="./images/about/moreva-tablet-mobile.webp 1x, ./images/about/moreva-tablet-mobile@2x.webp 2x"
+            media="(min-width: 320px)" type="image/webp">
+        <source srcset="./images/about/moreva-tablet-mobile.jpg 1x, ./images/about/moreva-tablet-mobile.jpg 2x" media="(min-width: 320px)">
+        <img class="about__image" src="./images/about/moreva-desktop.webp" alt="About us">
+    </picture>
 
     <h3 class="about__suptitle">Elena Moreva</h3>
 
