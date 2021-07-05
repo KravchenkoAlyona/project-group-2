@@ -1,13 +1,13 @@
 <header>
     <!-- добавить якоря -->
-    <div class="header-container">
+    <div class="header-container container">
         <ul class="header-container__list-logo">
             <li class="header-container__item-logo">Hell <span class="header-container__second-part">EN</span>
-                <svg>
+                <svg class="header__fire">
                     <use href="./images/svg/sprite.svg#icon-logo"></use>
                 </svg>
             </li>
-            <li class="header-container__item-logo">hellish <span class="header-container__second-word">english</span></li>
+            <li class="header-container__item-logo_second">hellish <span class="header-container__second-word">english</span></li>
         </ul>
         <ul class="header-container__list-menu">
             <li class="header-container__item-menu"><a href="#" class="header-container__link">Studying program</a></li>
@@ -16,5 +16,27 @@
             <li class="header-container__item-menu"><a href="#" class="header-container__link">contacts</a></li>
         </ul>
         <button type="button" class="header-container__button">consultation by phone</button>
-    </div>
+        <button type="button" class="header-mobile__menu" data-menu-button>
+            <svg class="header-mobile__icon">
+                <use href="./images/svg/sprite.svg#icon-menu-mobl"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+            <div class=" mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__icon-close">
+                        <use href="./images/svg/sprite.svg#close-mobl-menu"></use>
+                    </svg>
+                </button>
+                <ul class="header-container__list-logo">
+                    <li class="header-container__item-logo">Hell <span class="header-container__second-part">EN</span>
+                        <svg class="header__fire">
+                            <use href="./images/svg/sprite.svg#icon-logo"></use>
+                        </svg>
+                    </li>
+                    <li class="header-container__item-logo_second">hellish <span class="header-container__second-word">english</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
 </header>
