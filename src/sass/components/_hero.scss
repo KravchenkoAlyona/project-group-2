@@ -3,10 +3,6 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  header & {
-    display: flex;
-    align-items: center;
-  }
   @media screen and (max-width: 766px) {
     width: 480px;
     margin: 0 auto;
@@ -17,6 +13,7 @@
     height: 384px;
     padding-right: 40px;
     padding-left: 40px;
+    background-image: url(../images/hero/background/bg-tablet.jpg);
   }
 
   @media screen and (min-width: 1366px) {
@@ -103,7 +100,7 @@
   @media screen and (min-width: 1366px) {
     bottom: 0px;
     right: 0px;
-    transform: translate(10%, -10%);
+    transform: translate(6%, -10%);
   }
 }
 .hero__button {
