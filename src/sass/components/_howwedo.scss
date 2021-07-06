@@ -1,14 +1,14 @@
 .how-we-do {
-  margin-top: 50px;
   margin-bottom: 50px;
 
   @media screen and (min-width: 1366px) {
-    margin-top: 213px;
     margin-bottom: 75px;
   }
 }
 
 .how-we-do__list {
+  margin-top: 30px;
+
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 334px);
@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(3, 424px);
     gap: 20px;
-    margin-top: 62px;
+    margin-top: 50px;
   }
 }
 
@@ -28,11 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  padding-top: 30px;
-  padding-bottom: 21px;
+  padding: 30px 10px 21px 10px;
 
   background-color: var(--all-white-color);
   box-shadow: 0 0px 26px 0 rgba(0, 0, 0, 0.1);
@@ -84,7 +80,6 @@
   line-height: 1.3;
   font-weight: 900px;
   text-align: center;
-  margin-bottom: 30px;
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
@@ -93,7 +88,6 @@
 
   @media screen and (min-width: 1366px) {
     font-size: 46px;
-    margin-bottom: 32px;
     text-align: start;
   }
 }
