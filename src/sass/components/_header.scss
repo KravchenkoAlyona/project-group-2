@@ -34,8 +34,6 @@
 
   @media screen and (min-width: 1366px) {
     display: flex;
-    padding-top: 57px;
-    padding-bottom: 26px;
     &:not(:first-child) {
       margin-left: 40px;
     }
@@ -48,7 +46,15 @@
   line-height: 1.21;
   text-transform: uppercase;
 
+  padding-top: 57px;
+  padding-bottom: 26px;
+
   color: var(--header-menu-text-color);
+
+  &:hover,
+  :focus {
+    color: var(--all-orange-color);
+  }
 }
 .header-container__list-logo {
   position: relative;
@@ -147,4 +153,12 @@
   @media screen and (min-width: 1366px) {
     display: none;
   }
+}
+.header-container__second-word_white,
+.header-container__second-part_white,
+.header-container__item-logo_white {
+  color: var(--all-white-color);
+}
+.header-container__link_orange {
+  color: var(--all-orange-color);
 }

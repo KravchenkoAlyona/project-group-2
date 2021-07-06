@@ -4,8 +4,10 @@
   padding-right: 15px;
 
   @media screen and (max-width: 766px) {
-    width: 480px;
+    width: 320px;
     margin: 0 auto;
+    background-image: url(../images/hero/background/bg-mobile.jpg);
+    background-position: (50% 70%);
   }
 
   @media (min-width: 767px) and (max-width: 1365px) {
@@ -14,6 +16,7 @@
     padding-right: 40px;
     padding-left: 40px;
     background-image: url(../images/hero/background/bg-tablet.jpg);
+    background-position: (50% 80%);
   }
 
   @media screen and (min-width: 1366px) {
@@ -88,8 +91,8 @@
 .hero__picture {
   position: absolute;
   bottom: 1px;
-  right: 150px;
-  transform: translate(-31%, -25%);
+  right: 0px;
+  transform: translate(-27%, -25%);
 
   @media (min-width: 767px) and (max-width: 1365px) {
     bottom: 0px;
