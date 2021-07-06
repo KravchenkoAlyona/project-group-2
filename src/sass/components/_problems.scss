@@ -7,14 +7,16 @@
 // }
 .problems {
   background-color: $problems_background-primary;
+
   padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   min-height: 546px;
   margin-bottom: 200px;
 }
 
 .problems__title {
-  max-width: 280px;
-
   text-align: left;
   font-weight: 800;
   font-size: 24px;
@@ -35,18 +37,18 @@
 .problems__position {
   position: absolute;
   padding: 34px 22px;
-  right: 20px;
-  left: 20px;
-  top: 206px;
-  min-width: 280px;
-  min-height: 488px;
+
+  right: 10px;
+  left: 10px;
+  top: 120%;
 
   background-color: $white-color;
+  box-shadow: -5px 8px 26px $advantages_background;
 }
 
 .problems__item {
   text-align: left;
-  min-width: 237px;
+  width: 236px;
   font-weight: bold;
   font-size: 14px;
   line-height: 2;
@@ -55,24 +57,66 @@
 }
 
 .problems__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  //   display: grid;
-  //   grid-template-rows: 1fr 1fr 1fr;
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   grid-gap: 2vw;
   counter-reset: problems__list;
 }
 
 .problems__item::before {
   display: flex;
-  //   display: block;
-  //   content: ' ';
-  //   width: 20px;
-  //   height: 2px;
   counter-increment: problems__list 01;
 
   content: '\268A  0'counter(problems__list);
   color: $all-orange-color;
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    padding-top: 60px;
+    padding-left: 42px;
+    min-height: 340px;
+  }
+
+  .problems__title-tablet {
+    margin-left: 20px;
+  }
+
+  .problems__position {
+    padding: 28px 96px;
+  }
+
+  .problems__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .problems {
+    background-image: url(../images/svg/fire.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 60px;
+    min-height: 560px;
+  }
+
+  .problems__title {
+    font-size: 46px;
+  }
+
+  .problems__position {
+    top: 150%;
+    padding: 65px 114px;
+    min-height: 362px;
+  }
+
+  .problems__item {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .problems__list {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
