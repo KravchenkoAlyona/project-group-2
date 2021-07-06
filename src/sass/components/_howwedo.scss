@@ -127,8 +127,12 @@
 }
 
 .how-we-do__suptitle-lines {
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 768px) {
     max-width: 250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 280px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -176,8 +180,10 @@
 //   background-color: red;
 // }
 
-.how-we-do__span {
+.how-we-do__description::before {
+  content: '\2014';
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 33px;
   margin-top: 5px;
