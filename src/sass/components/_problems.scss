@@ -9,8 +9,8 @@
   background-color: $problems_background-primary;
 
   padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   min-height: 546px;
   margin-bottom: 200px;
@@ -38,8 +38,8 @@
   position: absolute;
   padding: 34px 22px;
 
-  right: 10px;
-  left: 10px;
+  right: 20px;
+  left: 20px;
   top: 120%;
 
   background-color: $white-color;
@@ -71,7 +71,7 @@
 @media screen and (min-width: 768px) {
   .problems {
     padding-top: 60px;
-    padding-left: 42px;
+    // padding-left: 42px;
     min-height: 340px;
   }
 
@@ -81,6 +81,8 @@
 
   .problems__position {
     padding: 28px 96px;
+    right: 40px;
+    left: 40px;
   }
 
   .problems__list {
@@ -93,10 +95,13 @@
 
 @media screen and (min-width: 1366px) {
   .problems {
+    max-width: 1680px;
+    margin: 0 auto;
     background-image: url('../images/svg/problems-fire.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
 
+    // overflow-x: hidden;
     padding-top: 60px;
     min-height: 560px;
   }
@@ -107,7 +112,9 @@
 
   .problems__position {
     top: 150%;
+    // right: -25%;
     padding: 65px 114px;
+    max-width: 1314px;
     min-height: 362px;
   }
 
