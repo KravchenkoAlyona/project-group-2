@@ -1,7 +1,5 @@
 .hero {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
   z-index: 99;
 
   @media screen and (max-width: 766px) {
@@ -14,8 +12,6 @@
   @media (min-width: 768px) and (max-width: 1365px) {
     width: 768px;
     height: 384px;
-    padding-right: 40px;
-    padding-left: 40px;
     background-image: url(../images/hero/background/bg-tablet.jpg);
     background-position: (50% 90%);
   }
