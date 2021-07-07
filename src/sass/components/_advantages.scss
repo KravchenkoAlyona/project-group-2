@@ -79,9 +79,9 @@
     font-size: 20px;
 
     &::before {
+      margin-right: -10px;
       min-height: 102px;
       min-width: 100px;
-      margin-right: 0;
     }
   }
 
