@@ -1,7 +1,6 @@
 .advantages {
   padding-top: 30px;
   padding-bottom: 44px;
-  
 }
 
 .advantages__container {
@@ -80,13 +79,13 @@
     font-size: 20px;
 
     &::before {
+      margin-right: -10px;
       min-height: 102px;
       min-width: 100px;
-      margin-right: 0;
     }
   }
 
   .advantages__item:not(:last-child) {
-    margin-right: 158px;
+    margin-right: 120px;
   }
 }

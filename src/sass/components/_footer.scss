@@ -1,0 +1,124 @@
+.footer_logo {
+  @media screen and (min-width: 320px) {
+    margin-top: 34px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.footer-container__item-logo,
+.footer-container__item-logo_second {
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.footer-container__item-logo_second {
+  @media screen and (min-width: 320px) {
+    font-style: normal;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.footer-container__item-logo {
+  @media screen and (min-width: 320px) {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-top: 54px;
+  }
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+}
+.footer-container__second-word {
+  color: #ff6b09;
+}
+.footer_div {
+  text-align: center;
+}
+.footer_tell {
+  @media screen and (min-width: 320px) {
+    color: black;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    padding-top: 0px;
+    position: relative;
+  }
+  @media screen and (min-width: 1366px) {
+    position: relative;
+    margin-right: 60px;
+  }
+}
+.footer_div {
+  padding-top: 21px;
+  padding-bottom: 31px;
+}
+.footer_down {
+  @media screen and (min-width: 320px) {
+    text-align: center;
+    background-color: #111518;
+    height: 70px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.footer_name {
+  @media screen and (min-width: 320px) {
+    color: #b9b9b9;
+    padding-top: 22px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.footer_li {
+  @media screen and (min-width: 320px) {
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 31px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 51px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-top: 63px;
+    margin-right: 240px;
+  }
+}
+.footer-container__list-logo {
+  height: 150px;
+}

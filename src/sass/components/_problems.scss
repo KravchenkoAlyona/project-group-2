@@ -9,11 +9,11 @@
   background-color: $problems_background-primary;
 
   padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   min-height: 546px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .problems__title {
@@ -36,10 +36,10 @@
 
 .problems__position {
   position: absolute;
-  padding: 34px 22px;
+  padding: 34px 22px 34px 50px;
 
-  right: 10px;
-  left: 10px;
+  right: 20px;
+  left: 20px;
   top: 120%;
 
   background-color: $white-color;
@@ -71,8 +71,9 @@
 @media screen and (min-width: 768px) {
   .problems {
     padding-top: 60px;
-    padding-left: 42px;
+    // padding-left: 42px;
     min-height: 340px;
+    margin-bottom: 220px;
   }
 
   .problems__title-tablet {
@@ -81,6 +82,8 @@
 
   .problems__position {
     padding: 28px 96px;
+    right: 40px;
+    left: 40px;
   }
 
   .problems__list {
@@ -97,12 +100,13 @@
     min-height: 560px;
     margin: 0 auto;
     margin-bottom: 200px;
-    background-image: url('../images/svg/problems-fire.svg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
+    // background-image: url('../images/svg/problems-fire.svg');
+    // background-repeat: no-repeat;
+    // background-position: right bottom;
+
+    // overflow-x: hidden;
     padding-top: 60px;
-    min-height: 560px;
   }
 
   .problems__title {
@@ -111,8 +115,9 @@
 
   .problems__position {
     top: 150%;
+    // right: -25%;
     padding: 65px 114px;
-    max-width: 1314px;
+
     min-height: 362px;
   }
 
