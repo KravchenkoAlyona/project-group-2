@@ -197,7 +197,7 @@
 }
 
 .about_item::before {
-  // content: url(../image/svg/icon-tick);
+  content: 'url(../image/svg/icon-tick.svg)';
   display: inline-block;
   margin-right: 9px;
   fill: var(--all-orange-color);

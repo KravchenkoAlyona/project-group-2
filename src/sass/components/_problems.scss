@@ -93,6 +93,10 @@
 
 @media screen and (min-width: 1366px) {
   .problems {
+    max-width: 1680px;
+    min-height: 560px;
+    margin: 0 auto;
+    margin-bottom: 200px;
     background-image: url('../images/svg/problems-fire.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -108,6 +112,7 @@
   .problems__position {
     top: 150%;
     padding: 65px 114px;
+    max-width: 1314px;
     min-height: 362px;
   }
 
