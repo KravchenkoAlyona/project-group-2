@@ -142,4 +142,10 @@
     padding: 27px 0;
     width: 354px;
   }
+
+  &:hover,
+  :focus {
+    background-color: var(--primary-text-color);
+    color: var(--all-orange-color);
+  }
 }

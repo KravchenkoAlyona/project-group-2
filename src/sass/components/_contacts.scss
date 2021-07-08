@@ -5,6 +5,7 @@
   padding-bottom: 56px;
   width: 100%;
   background-image: url(../images/contacts/mobile/bg.png);
+  background-position: center;
 
   @media (min-device-pixel-ratio: 2) and (min-width: 320px),
     (min-resolution: 192dpi) and (min-width: 320px),
@@ -38,8 +39,6 @@
       (min-resolution: 2dppx) and (min-width: 1366px) {
       & {
         background-image: url(../images/contacts/desktop/bg@2x.png);
-        // height: 816px;
-        // max-width: 1680px;
       }
     }
   }
@@ -132,6 +131,7 @@
   border: 1px solid $white-color;
   background-color: transparent;
   color: $white-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (min-width: 768px) and (max-width: 1365px) {
     padding-left: 28px;
@@ -140,6 +140,11 @@
   @media screen and (min-width: 1366px) {
     height: 70px;
     padding-left: 40px;
+  }
+
+  &:hover,
+  :focus {
+    border-color: var(--all-orange-color);
   }
 }
 
@@ -192,6 +197,8 @@
 
   color: $white-color;
   background-color: $all-orange-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (min-width: 768px) and (max-width: 1365px) {
     margin-top: 31px;
@@ -205,5 +212,11 @@
     margin-top: 80px;
     width: 354px;
     height: 70px;
+  }
+
+  &:hover,
+  :focus {
+    background-color: var(--all-white-color);
+    color: var(--all-orange-color);
   }
 }
