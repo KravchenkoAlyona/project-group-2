@@ -38,8 +38,6 @@
   position: absolute;
   padding: 34px 22px 34px 40px;
 
-  right: 20px;
-  left: 20px;
   top: 120%;
 
   background-color: var(--all-white-color);
@@ -73,7 +71,7 @@
     padding-top: 60px;
     // padding-left: 42px;
     min-height: 340px;
-    margin-bottom: 280px;
+    margin-bottom: 220px;
   }
 
   .problems__title-tablet {
@@ -82,8 +80,8 @@
 
   .problems__position {
     padding: 28px 96px;
-    right: 40px;
-    left: 40px;
+    // right: 40px;
+    // left: 40px;
   }
 
   .problems__list {
@@ -107,6 +105,7 @@
 
     // overflow-x: hidden;
     padding-top: 60px;
+    margin-bottom: 220px;
   }
 
   .problems__title {
@@ -115,9 +114,9 @@
 
   .problems__position {
     top: 150%;
-    // right: -25%;
+    min-width: 1314px;
     padding: 65px 114px;
-    // max-width: 1314px;
+
     min-height: 362px;
   }
 
