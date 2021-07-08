@@ -1,5 +1,5 @@
 .benefits {
-  background-color: $problems_background-white;
+  background-color: var(--all-white-color);
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
@@ -20,8 +20,8 @@
   letter-spacing: 0.03em;
   text-align: left;
   padding-bottom: 30px;
-  color: $white-color;
-  background-color: $problems_background-primary;
+  color: var(--all-white-color);
+  background-color: var(--primary-text-color);
   @media screen and (min-width: 768px) {
     text-align: center;
   }
@@ -50,13 +50,13 @@
   counter-increment: benefits__list 01;
 
   content: '\268A  0'counter(benefits__list);
-  color: $all-orange-color;
+  color: var(--all-orange-color);
 }
 
 .benefits__position {
   min-height: 638px;
   padding: 50px;
-  box-shadow: -5px 8px 26px $advantages_background;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 @media screen and (max-width: 767px) {
