@@ -1,5 +1,6 @@
 .guarantee {
   &__conteiner {
+    padding: 0;
   }
   &__title {
     font-family: Montserrat, sans-serif;
@@ -16,7 +17,9 @@
     background-color: #f1f1f1;
     padding-bottom: 50px;
     padding-top: 30px;
-    padding-left: 20px;
+  }
+  &__list {
+    margin: 0 20px;
   }
 
   &__item {
