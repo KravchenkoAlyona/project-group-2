@@ -1,4 +1,5 @@
 .reviews {
+  padding: 0 20px;
   &__title {
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -8,11 +9,11 @@
 
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 50px;
 
-    color: #111518;
+    color: var(--primary-text-color);
   }
   &__page {
-    width: 100%;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     margin-bottom: 62px;
   }
@@ -30,7 +31,7 @@
   }
   &__link:hover .reviews__icon,
   &__link:focus .reviews__icon {
-    fill: #ff6b09;
+    fill: var(--all-orange-color);
   }
   &__icon {
     fill: #436eab;
@@ -52,7 +53,7 @@
     letter-spacing: 0.08em;
     text-align: center;
 
-    color: #ff6b09;
+    color: var(--all-orange-color);
     margin-bottom: 20px;
   }
   &__study {
@@ -86,6 +87,25 @@
     margin-left: 10px;
     margin-bottom: 50px;
   }
+  &__item-img:nth-child(n + 4) {
+    display: none;
+  }
+}
+.about__more {
+  display: none;
+}
+.about__read {
+  color: var(--all-orange-color);
+  text-decoration-line: underline;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.reviews__about.more-text .about__more {
+  display: inline;
+}
+.reviews__about.more-text .about__dots {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .reviews__title {
@@ -102,24 +122,27 @@
   .reviews__box-img {
     margin-right: 46px;
   }
-  .review__img {
+  .reviews__img {
     margin-bottom: 20px;
     width: 150px;
   }
-  .reviem__name {
+  .reviews__name {
     font-size: 30px;
     line-height: 1.23;
     text-align: start;
   }
-  .reviem__study {
+  .reviews__study {
     font-size: 14px;
     line-height: 17px;
     text-align: start;
   }
-  .reviem__about {
+  .reviews__about {
     font-size: 18px;
     line-height: 1.56;
     text-align: start;
+  }
+  .reviews__item-img:nth-child(n + 4) {
+    display: block;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -131,20 +154,20 @@
     width: 1090px;
     padding: 50px 82px;
   }
-  .review__img {
+  .reviews__img {
     width: 150px;
   }
-  .reviem__name {
+  .reviews__name {
     font-size: 30px;
     line-height: 1.23;
     text-align: start;
   }
-  .reviem__study {
+  .reviews__study {
     font-size: 14px;
     line-height: 17px;
     text-align: start;
   }
-  .reviem__about {
+  .reviews__about {
     font-size: 18px;
     line-height: 1.56;
     text-align: start;
@@ -152,17 +175,4 @@
   .reviews__item-img {
     margin-left: 30px;
   }
-}
-.about__more {
-  display: none;
-}
-.about__read {
-  color: #ff6b09;
-  text-decoration-line: underline;
-}
-.reviers__about.more-text .about__more {
-  display: inline;
-}
-.reviers__about.more-text .about__dots {
-  display: none;
 }
