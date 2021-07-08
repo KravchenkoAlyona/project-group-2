@@ -38,6 +38,7 @@
     width: 30px;
     height: 30px;
     margin-bottom: 24px;
+    transition: fill var(--time-animation) var(--cubic);
   }
   &__box {
     display: flex;
@@ -100,6 +101,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .reviews__about.more-text .about__more {
   display: inline;
