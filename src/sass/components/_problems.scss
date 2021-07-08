@@ -5,9 +5,9 @@
 //     $problems_background-white
 //   );
 // }
-.problems {
-  background-color: $problems_background-primary;
 
+.problems {
+  background-color: var(--primary-text-color);
   padding-top: 28px;
   // padding-left: 20px;
   // padding-right: 20px;
@@ -23,11 +23,11 @@
   line-height: 1.3;
 
   letter-spacing: 0.03em;
-  color: $white-color;
+  color: var(--all-white-color);
 }
 
 .problems__title-accent {
-  color: $all-orange-color;
+  color: var(--all-orange-color);
 }
 
 .problems__container {
@@ -42,8 +42,8 @@
   left: 20px;
   top: 120%;
 
-  background-color: $white-color;
-  box-shadow: -5px 8px 26px $advantages_background;
+  background-color: var(--all-white-color);
+  box-shadow: -5px 8px 26px var(--box-shadow-color);
 }
 
 .problems__item {
@@ -65,7 +65,7 @@
   counter-increment: problems__list 01;
 
   content: '\268A  0'counter(problems__list);
-  color: $all-orange-color;
+  color: var(--all-orange-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -73,7 +73,7 @@
     padding-top: 60px;
     // padding-left: 42px;
     min-height: 340px;
-    margin-bottom: 220px;
+    margin-bottom: 280px;
   }
 
   .problems__title-tablet {
@@ -96,12 +96,13 @@
 
 @media screen and (min-width: 1366px) {
   .problems {
-    max-width: 1680px;
+    // max-width: 1680px;
     min-height: 560px;
     margin: 0 auto;
     margin-bottom: 200px;
     background-image: url('../images/svg/problems-fire.svg');
     background-repeat: no-repeat;
+    background-size: 455px 472px;
     background-position: right bottom;
 
     // overflow-x: hidden;
