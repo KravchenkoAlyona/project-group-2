@@ -1,6 +1,4 @@
 .guarantee {
-  &__conteiner {
-  }
   &__title {
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -63,6 +61,11 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .guarantee__conteiner {
+    width: 1366px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
   .guarantee__box {
     padding: 50px 112px;
   }
