@@ -145,6 +145,7 @@
   &:hover,
   :focus {
     border-color: var(--all-orange-color);
+    outline: none;
   }
 }
 
@@ -172,11 +173,11 @@
 }
 
 .contacts__input:required:not(:placeholder-shown):valid {
-  background-color: transparent;
+  border-color: var(--all-white-color);
 }
 
 .contacts__input:required:not(:placeholder-shown):invalid {
-  background-color: var(--red-invalid-input);
+  border-color: var(--red-invalid-input);
 }
 
 .contacts__button {
