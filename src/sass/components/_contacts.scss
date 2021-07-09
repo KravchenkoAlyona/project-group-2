@@ -1,3 +1,10 @@
+.contacts {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .contacts__container {
   background-color: var(--primary-text-color);
   background-repeat: no-repeat;
