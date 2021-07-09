@@ -85,12 +85,8 @@
       }
     }
   }
-  &__list:first-child:before {
-    top: 0px;
-
-    @media screen and (min-width: 1365px) {
-      top: -66px;
-    }
+  .program__list:first-child:before {
+    top: 0;
   }
   &__schedule {
     font-size: 14px;
@@ -155,20 +151,6 @@
       position: absolute;
       left: -160px;
       bottom: -340px;
-    }
-  }
-
-  &__margin {
-    @media screen and (max-width: 767px) {
-      margin-right: 0;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
-      margin-right: 0;
-      width: 110px;
-    }
-    @media screen and (min-width: 1366px) {
-      width: 176px;
-      margin-right: 50px;
     }
   }
 }
