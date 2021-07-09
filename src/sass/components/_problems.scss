@@ -13,7 +13,7 @@
   // padding-right: 20px;
 
   min-height: 546px;
-  margin-bottom: 198px;
+  margin-bottom: 220px;
 }
 
 .problems__title {
@@ -36,9 +36,10 @@
 
 .problems__position {
   position: absolute;
-  padding: 34px 22px 34px 40px;
+  padding: 34px 22px 34px;
 
   top: 120%;
+  min-width: 280px;
 
   background-color: var(--all-white-color);
   box-shadow: -5px 8px 26px var(--box-shadow-color);
@@ -46,7 +47,7 @@
 
 .problems__item {
   text-align: left;
-  width: 236px;
+  width: 207px;
   font-weight: bold;
   font-size: 14px;
   line-height: 2;
@@ -66,6 +67,13 @@
   color: var(--all-orange-color);
 }
 
+// @media (min-width: 480px) and (max-width: 767px) {
+//   .problems__position {
+//     left: 10%;
+//     right: 10%;
+//   }
+// }
+
 @media screen and (min-width: 768px) {
   .problems {
     padding-top: 60px;
@@ -74,14 +82,15 @@
     margin-bottom: 200px;
   }
 
-  .problems__title-tablet {
-    margin-left: 20px;
-  }
-
   .problems__position {
+    min-width: 688px;
     padding: 28px 96px;
     // right: 40px;
     // left: 40px;
+  }
+
+  .problems__item {
+    width: 236px;
   }
 
   .problems__list {
