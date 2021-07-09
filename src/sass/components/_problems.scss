@@ -36,7 +36,7 @@
 
 .problems__position {
   position: absolute;
-  padding: 34px 22px 34px;
+  padding: 34px 22px 34px 44px;
 
   top: 120%;
   min-width: 280px;
@@ -67,12 +67,12 @@
   color: var(--all-orange-color);
 }
 
-// @media (min-width: 480px) and (max-width: 767px) {
-//   .problems__position {
-//     left: 10%;
-//     right: 10%;
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .problems__position {
+    left: 15px;
+    right: 15px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .problems {
@@ -85,6 +85,7 @@
   .problems__position {
     min-width: 688px;
     padding: 28px 96px;
+    min-width: 688px;
     // right: 40px;
     // left: 40px;
   }
