@@ -1,8 +1,8 @@
 .how-we-do {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   @media screen and (min-width: 1366px) {
-    margin-bottom: 75px;
+    padding-bottom: 75px;
   }
 }
 
@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 1366px) {
     display: grid;
-    grid-template-columns: repeat(3, 424px);
+    grid-template-columns: repeat(3, 425px);
     gap: 20px;
     margin-top: 50px;
   }
