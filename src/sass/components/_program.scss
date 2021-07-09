@@ -75,6 +75,7 @@
       height: 12px;
       border: 6px solid var(--all-orange-color);
       border-radius: 50%;
+
       @media screen and (min-width: 768px) {
         right: 56px;
       }
@@ -83,6 +84,9 @@
         right: 0;
       }
     }
+  }
+  .program__list:first-child:before {
+    top: 0;
   }
   &__schedule {
     font-size: 14px;
