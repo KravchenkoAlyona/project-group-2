@@ -3,15 +3,21 @@
   background-color: var(--primary-text-color);
   @media screen and (max-width: 767px) {
     padding-top: 50px;
-    padding-bottom: 536px;
+    padding-bottom: 437px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 60px;
-    padding-bottom: 392px;
+    padding-bottom: 172px;
   }
   @media screen and (min-width: 1366px) {
     padding-top: 120px;
     padding-bottom: 362px;
+  }
+  &__border {
+    @media screen and (min-width: 1366px) {
+      padding-bottom: 100px;
+      border-bottom: 1px solid var(--all-white-color);
+    }
   }
   &__container {
     position: relative;
@@ -43,9 +49,6 @@
     }
     @media screen and (min-width: 1366px) {
       display: flex;
-      margin-top: 100px;
-      padding-top: 60px;
-      border-top: 1px solid var(--all-white-color);
     }
   }
   &__list {
@@ -65,10 +68,29 @@
         border-left: 1px solid var(--all-white-color);
       }
     }
+  }
+  &__list:first-child:before {
+    top: 0px;
+
+    @media screen and (min-width: 1365px) {
+      top: -66px;
+    }
+  }
+  &__schedule {
+    font-size: 14px;
+    line-height: 0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--all-white-color);
+    padding-bottom: 10px;
+    @media screen and (min-width: 1366px) {
+      font-size: 20px;
+      line-height: 1.4;
+      padding-bottom: 26px;
+    }
     &::before {
       position: relative;
       right: 28px;
-      top: 20px;
       display: block;
       content: '';
       width: 12px;
@@ -80,27 +102,9 @@
         right: 56px;
       }
       @media screen and (min-width: 1365px) {
-        top: -66px;
+        top: -58px;
         right: 0;
       }
-    }
-  }
-  &__list:first-child:before {
-    top: 0px;
-
-    @media screen and (min-width: 1365px) {
-      top: -66px;
-    }
-  }
-  &__schedule {
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--all-white-color);
-    @media screen and (min-width: 1366px) {
-      font-size: 20px;
-      line-height: 1.4;
     }
   }
   &__secondary-list {
@@ -142,14 +146,14 @@
   &__image {
     @media screen and (max-width: 767px) {
       position: absolute;
-      left: 185px;
-      bottom: -50px;
+      left: 210px;
+      bottom: 60px;
       z-index: 5;
     }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       position: absolute;
       left: 384px;
-      bottom: -150px;
+      bottom: 80px;
     }
     @media screen and (min-width: 1366px) {
       position: absolute;
