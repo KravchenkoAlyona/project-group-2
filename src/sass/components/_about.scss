@@ -19,12 +19,6 @@
   }
 }
 
-.about__container {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 280px;
-  }
-}
-
 .about__title {
   font-size: 20px;
   line-height: 1.3;
@@ -108,15 +102,32 @@
 .about__item {
   display: flex;
   align-items: center;
-}
 
-.about__item:not(:first-child) {
-  @media screen and (max-width: 1365px) {
-    margin-top: 15px;
+  &::before {
+    content: ' ';
+    background: url(../images/svg/icon-tick.svg);
+    background-repeat: no-repeat;
+    display: block;
+
+    @media screen and (max-width: 1365px) {
+      width: 17px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      height: 20px;
+      width: 24px;
+    }
   }
 
-  @media screen and (min-width: 1366px) {
-    margin-top: 20px;
+  &:not(:first-child) {
+    @media screen and (max-width: 1365px) {
+      margin-top: 15px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -124,7 +135,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  width: 253px;
+  flex-shrink: 25;
   letter-spacing: 0.06em;
   margin-left: 9px;
   color: var(--primary-text-color);
@@ -164,7 +175,7 @@
   font-size: 12px;
   line-height: 1.66;
   font-weight: 500;
-  width: 279px;
+  flex-shrink: 3;
   color: var(--header-menu-text-color);
 
   &:not(:first-child) {
@@ -207,19 +218,5 @@
     font-size: 18px;
     line-height: 1.56;
     margin-top: 50px;
-  }
-}
-
-.about__item::before {
-  content: ' ';
-  background: url(../images/svg/icon-tick.svg);
-  background-repeat: no-repeat;
-  display: block;
-  height: 20px;
-  width: 24px;
-
-  @media screen and (min-width: 1366px) {
-    height: 20px;
-    width: 24px;
   }
 }
