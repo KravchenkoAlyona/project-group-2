@@ -5,6 +5,8 @@
     margin: 0 auto;
     background-image: url(../images/hero/background/bg-mobile.jpg);
     background-position: (50% 80%);
+    flex-wrap: nowrap;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 768px) and (max-width: 1365px) {
@@ -85,18 +87,18 @@
 .hero__picture {
   position: absolute;
   bottom: 1px;
-  right: 0px;
+  left: 115px;
   transform: translate(-27%, -25%);
 
   @media (min-width: 767px) and (max-width: 1365px) {
     bottom: 20px;
-    right: 0px;
+    left: 380px;
     transform: translate(-5%, -15%);
   }
 
   @media screen and (min-width: 1366px) {
     bottom: 0px;
-    right: 0px;
+    left: 550px;
     transform: translate(6%, -10%);
   }
 }
