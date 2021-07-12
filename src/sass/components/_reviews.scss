@@ -80,33 +80,14 @@
     text-align: center;
   }
   &__list-img {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 130px;
   }
-  &__list-img::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(100%);
-    display: block;
-    content: url(../images/svg/arrow-one-min.svg);
-    width: 25px;
-  }
-  &__list-img::after {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(50%, 100%);
-    display: block;
-    content: url(../images/svg/arrow-two-min.svg);
-    width: 25px;
-  }
+
   &__item-img {
-    margin-left: 10px;
-    margin-bottom: 50px;
+    padding-left: 10px;
   }
   &__item-img:nth-child(n + 4) {
     display: none;
@@ -135,31 +116,11 @@
     margin-bottom: 30px;
   }
   .reviews__page {
-    position: relative;
     display: flex;
     margin: 0 auto;
     margin-bottom: 40px;
     width: 688px;
     padding: 40px;
-
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateX(-50%);
-      display: block;
-      content: url(../images/svg/arrow-one-min.svg);
-      width: 25px;
-    }
-    &::after {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateX(50%);
-      display: block;
-      content: url(../images/svg/arrow-two-min.svg);
-      width: 25px;
-    }
   }
   .reviews__list-img::before {
     display: none;
@@ -224,4 +185,33 @@
   .reviews__item-img {
     margin-left: 30px;
   }
+}
+.reviews-slider {
+  text-align: center;
+}
+.reviews-slider .swiper-button-next {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.reviews-slider .swiper-button-next::after {
+  position: absolute;
+  width: 25px;
+  content: url(../images/svg/arrow-two-min.svg);
+}
+.reviews-slider .swiper-button-prev {
+  position: absolute;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.reviews-slider .swiper-button-prev::after {
+  position: absolute;
+  width: 25px;
+  content: url(../images/svg/arrow-one-min.svg);
+}
+.reviews-slider-min {
+  margin-bottom: 50px;
 }
